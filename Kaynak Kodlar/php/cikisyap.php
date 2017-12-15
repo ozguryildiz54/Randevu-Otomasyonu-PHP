@@ -1,0 +1,65 @@
+<?php include("ayarlar.php");  ob_start(); session_start(); session_destroy(); ?>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Randevu Sistemi</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="shortcut icon" href="../images/js.ico">
+  <script type="text/javascript" src="../js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="../index.html">Baş Hekim Özgür YILDIZ</a></h1>
+          <h2>Web siteme hoş geldiniz! Ofisimde muayene olmak için kayıt olup randevu alınız.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="../index.html">Anasayfa</a></li>
+          <li><a href="doktor.php">Doktorunuzu Tanıyın</a></li>
+          <li><a href="muayene_incele.php">Muayenemi İnceleyin</a></li>
+          <li><a href="iletisim.php">İletişim</a></li>
+          <li><a href="giris_yap.php">Üye Girişi</a></li>
+          <li><a href="kayit_ol.php">Kayıt Ol</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div style="text-align: left;
+  width: 700px;
+  margin: 0 0 0 0;
+  float: left;
+  color: #000;
+  font: 150% 'Yanone Kaffeesatz', arial, sans-serif;
+  text-decoration: none;  ">
+			<h1 style="color:#EEA200;font: 220% 'Yanone Kaffeesatz', arial, sans-serif;">
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Randevu Nasıl Alınır?
+			</h1>
+			<img src="../images/doktor.jpg" alt="Resme Ulaşılamıyor" height="300" width="1000">
+			<br><br>
+			Öncelikle web siteme üye olmadıysanız üst menüden kayıt ol butonu ile üye olmalısınız! Eger web siteme üye olduysanız üst menüden giriş yap butonu ile hesabınıza giriş yaparak randevu işlemlerinizi gerçekleştirebilirsiniz. 
+      </div>
+    </div>
+    <footer>
+	<?php header("refresh:1.5;url=../index.html"); ob_end_flush(); ?>
+      <p>Kişisel blogum için tıklayın : <a class="boya" href="http://www.yldzozgur.wordpress.com">yldzozgur.wordpress.com</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
